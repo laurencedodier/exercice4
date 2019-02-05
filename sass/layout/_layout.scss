@@ -5,6 +5,31 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
   
+  .global {
+    max-width: 100vw;
+    /*Propriété comme item flex*/
+    flex: 1 0 100%;
+    /*Conteneur flex en rangée*/
+    display: flex;
+    /*Poussée vers la gauche pour ne pas voir le menu*/
+    transform: translateX(-100%);
+    /*Effet de transition sur la transformation*/
+    transition: transform 1s;
+/*	overflow-x: hidden; */
+}
+
+.contenu {
+    /*Sa largeur est fixée à 100%*/
+    width: 100vw;
+    /*Propriété comme item flex - ne peut rétrécir*/
+    flex: 1 0 100%;
+    /*Conteneur flex en colonne pour ses enfants*/
+    display: flex;
+    flex-flow: column nowrap;
+    overflow-x: hidden; overflow-y: auto;
+}
+
+
   .sidebar {
           grid-area: sidebar;
       }
@@ -41,6 +66,8 @@ body {
        "sidebar2"
        "footer"
     }
+
+    
   
       @media only screen and (min-width: 500px)  {
       .wrapper {
