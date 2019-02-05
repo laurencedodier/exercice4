@@ -1,0 +1,103 @@
+body {
+<<<<<<< HEAD
+    margin: 40px;
+=======
+    margin: 10px;
+>>>>>>> design
+    color: yellow;
+    background-color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .sidebar {
+          grid-area: sidebar;
+      }
+  
+      .sidebar2 {
+          grid-area: sidebar2;
+      }
+  
+      .content {
+          grid-area: content;
+      }
+  
+      .header {
+          grid-area: header;
+          background-color: tomato;
+<<<<<<< HEAD
+=======
+          border-radius: 25%;
+>>>>>>> design
+      }
+  
+      .footer {
+          grid-area: footer;
+      }
+  
+      .wrapper {
+          background-color: #fff;
+          color: #438;
+      }
+  
+    .wrapper {
+      display: block;
+      grid-gap: 1em;
+      grid-template-areas:
+       "header"
+       "sidebar"git bran
+       "content"
+       "sidebar2"
+       "footer"
+    }
+  
+      @media only screen and (min-width: 500px)  {
+      .wrapper {
+  
+          grid-template-columns: 20% auto;
+          grid-template-areas:
+      "header   header"
+          "sidebar  content"
+          "sidebar2 sidebar2"
+          "footer   footer";
+      }
+      }
+  
+      @media only screen and (min-width: 600px)   {
+          .wrapper {
+        grid-gap: 20px;
+              grid-template-columns: 180px auto 180px;
+              grid-template-areas:
+        "header  header  header"
+              "sidebar content sidebar2"
+              "footer  footer  footer";
+             /* max-width: 600px;*/
+          }
+      }
+  
+  .box {
+    background-color: #444;
+    color: #fff;
+<<<<<<< HEAD
+    border-radius: 5px;
+    padding: 23px;
+    font-size: 100%; 
+=======
+    border-radius: 25px;
+    padding: 23px;
+    font-size: 90%; 
+>>>>>>> design
+  }
+  
+  .header,
+  .footer {
+    background-color: tomato;
+  }
+  
+  .sidebar2 {
+    background-color: #ccc;
+    color: #444;
+<<<<<<< HEAD
+=======
+    border: 5px solid blue;
+>>>>>>> design
+  }
