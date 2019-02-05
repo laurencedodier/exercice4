@@ -35,6 +35,7 @@ body {
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
   /*	overflow-x: hidden; */
+  margin-left: -9%;
 }
 
 .contenu {
@@ -57,8 +58,8 @@ body {
 }
 
 .boutonBurger {
-  background: -webkit-gradient(linear, left top, left bottom, from(#E84545), color-stop(20%, #E84545), color-stop(20%, transparent), color-stop(40%, transparent), color-stop(40%, #E84545), color-stop(60%, #E84545), color-stop(60%, transparent), color-stop(80%, transparent), color-stop(80%, #E84545), to(#E84545));
-  background: linear-gradient(to bottom, #E84545 0%, #E84545 20%, transparent 20%, transparent 40%, #E84545 40%, #E84545 60%, transparent 60%, transparent 80%, #E84545 80%, #E84545 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#E84545), color-stop(20%, #afe845), color-stop(20%, transparent), color-stop(40%, transparent), color-stop(40%, #afe845), color-stop(60%, #afe845), color-stop(60%, transparent), color-stop(80%, transparent), color-stop(80%, #afe845), to(#E84545));
+  background: linear-gradient(to bottom, #E84545 0%, #afe845 20%, transparent 20%, transparent 40%, #afe845 40%, #afe845 60%, transparent 60%, transparent 80%, #afe845 80%, #E84545 100%);
   height: 48px;
   width: 48px;
   margin: 1%;
@@ -93,6 +94,7 @@ body {
           justify-content: center;
   overflow-x: hidden;
   overflow-y: auto;
+  margin-right: 5%;
 }
 
 .menu a {
@@ -165,14 +167,14 @@ body {
   display: -ms-grid;
   display: grid;
   grid-gap: 1em;
-      grid-template-areas: "header" "sidebar" "content" "sidebar2" "footer";
+      grid-template-areas: "header" "sidebar" "content" "sidebar2" "footer";
 }
 
 @media only screen and (min-width: 500px) {
   .wrapper {
     -ms-grid-columns: 20% auto;
         grid-template-columns: 20% auto;
-        grid-template-areas: "header   header" "sidebar  content" "sidebar2 sidebar2" "footer   footer";
+        grid-template-areas: "header   header" "sidebar  content" "sidebar2 sidebar2" "footer   footer";
   }
 }
 
@@ -181,7 +183,7 @@ body {
     grid-gap: 20px;
     -ms-grid-columns: 180px auto 180px;
         grid-template-columns: 180px auto 180px;
-        grid-template-areas: "header  header  header" "sidebar content sidebar2" "footer  footer  footer";
+        grid-template-areas: "header  header  header" "sidebar content sidebar2" "footer  footer  footer";
     /* max-width: 600px;*/
   }
   .boutonBurger {
