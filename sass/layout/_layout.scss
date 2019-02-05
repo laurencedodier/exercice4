@@ -116,7 +116,7 @@ body {
       grid-gap: 1em;
       grid-template-areas:
        "header"
-       "sidebar"git bran
+       "sidebar"
        "content"
        "sidebar2"
        "footer"
@@ -156,6 +156,7 @@ body {
             transform: translateX(0%);
             /*Mettre le contenu en colonne*/				
             flex-direction: column;
+            margin-left: -3%;
         }
 
         .menu {
