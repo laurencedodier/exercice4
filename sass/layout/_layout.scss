@@ -41,7 +41,7 @@ body {
 }
 
 .menu {
-    background-color: #E84545;
+    background-color: rgb(82, 6, 6);
     text-align: center;
     /*Pour cet exemple, on fixe la largeur du menu à 100% ou 100vw*/
     width: 100vw;
@@ -99,7 +99,6 @@ body {
   
       .header {
           grid-area: header;
-          background-color: blue;
       }
   
       .footer {
@@ -194,5 +193,5 @@ body {
   .sidebar2 {
     background-color: #ccc;
     color: #444;
-    border: 5px solid blue;
+    border: 5px solid #444;
   }
